@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwind -i ./input.css -o ./css/main.css",
-    "watch": "tailwind -i ./input.css -o ./css/main.css --watch"
+    "watch": "tailwind -i ./input.css -o ./css/main.css --watch",
+    "build": "[my-framework] build --output public"
   },
   "keywords": [],
   "author": "",
