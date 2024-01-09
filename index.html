@@ -460,7 +460,7 @@
 
     <!-- Input Container -->
     <div class="flex flex-col justify-between">
-      <form onsubmit="sendEmail()">
+      <form>
         <div class="flex space-x-3">
           <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Email Us" />
           <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
@@ -480,13 +480,12 @@
 <script>
   function sendEmail(){
     Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    SecureToken: "9c247a8d-8db3-4568-8b89-45580877b340",
+    
+    To : 'homesaway432@gmail.com',
+    From : document.getElementById("email"),
+    Subject : "Homesaway Web Enquiry",
+    Body : "Name: " + document.getElementById{"name"}
 }).then(
   message => alert(message)
 );
