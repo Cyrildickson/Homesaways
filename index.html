@@ -486,18 +486,18 @@
      </svg>
      <span class="sr-only">Close menu</span>
   </button>
-  <form action="https://getform.io/f/c36cd454-b350-41ac-a5c5-73fc9885415f" method="POST" class="mb-6">
+  <form action="https://getform.io/f/1ba749ee-30e2-484f-9fe4-6c28e9468e59" method="POST" class="mb-6">
      <div class="mb-6">
         <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-        <input name="email" type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
+        <input name="email" type="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
      </div>
      <div class="mb-6">
         <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
-        <input name="subject" type="text" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Let us know how we can help you" required>
+        <input name="subject" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Let us know how we can help you" required>
      </div>
      <div class="mb-6">
         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
-        <textarea name="message" id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
+        <textarea name="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
      </div>
      <button type="submit" class="text-white bg-brightRed hover:bg-brightRedLight w-full focus:ring-4 focus:ring-brightRedLight font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-brightRed dark:hover:bg-brightRedLight focus:outline-none dark:focus:ring-brightRed block">Send message</button>
   </form>
@@ -590,14 +590,14 @@
 
     <!-- Input Container -->
     <div class="flex flex-col justify-between">
-      <form onsubmit="sendEmail(); reset(); return false;">
+      <!-- <form >
         <div class="flex space-x-3">
           <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Email Us" />
           <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
              Go
           </button>
         </div>
-      </form>
+      </form> -->
       <div class="hidden text-white md:block">
         Copyright &copy; 2022, All Rights Reserved
       </div>
@@ -606,34 +606,7 @@
 </footer>
 
 
-77EF3BBD950169373DDF4BA0E299E1734780
-
-<script src="js/script.js"></script>
-<script src=" https://smtpjs.com/v3/smtp.js"></script>
-
-<script>
-  submit.getElementListener('submit', (e)=>{
-    e.preventDefault();
-    console.log("clicked");
-  })
-
-  function sendEmail(){
-    Email.send({
-    SecureToken: "90623f1d-22dd-4dcf-8366-72a91b2fbacf ",
-    
-    To : 'homesaway432@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "Homesaway Web Enquiry",
-    Body : "Email: " + document.getElementById("email").value
-          + "<br> Subject:" + document.getElementById("subject").value
-          + "<br> Message:" + document.getElementById("message").value
-          
-}).then(
-  message => alert("Message Sent Succesfully")
-);
-
-}
-</script>
+<!--  -->
 
 <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
 <script
