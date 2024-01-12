@@ -465,13 +465,18 @@
     shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none
      block w-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-brightRedLight duration-300"
   type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
+  
   Contact Us Today
 </button>
 
 
-  <!-- <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
-  Contact Us Today
-  </button> -->
+<!-- <button
+    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm py-3.5 px-7 rounded-lg border border-blue-gray-500 text-blue-gray-500 hover:opacity-75 focus:ring focus:ring-blue-gray-200 active:opacity-[0.85] flex items-center gap-3"
+    type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
+    <img src="https://docs.material-tailwind.com/icons/google.svg" alt="metamask" class="w-6 h-6" />
+    Continue with
+    Google</b>   -->
+
 </div>
 
 <!-- drawer component -->
@@ -486,7 +491,11 @@
      </svg>
      <span class="sr-only">Close menu</span>
   </button>
-  <form action="https://getform.io/f/1ba749ee-30e2-484f-9fe4-6c28e9468e59" method="POST" class="mb-6">
+  <form action="https://getform.io/f/0325aaa9-2cfe-4463-badf-d3a8d9f56444" method="POST" class="mb-6">
+    <div class="mb-6">
+        <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+        <input name="name" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Name" required>
+     </div>
      <div class="mb-6">
         <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
         <input name="email" type="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
@@ -539,7 +548,7 @@
 </section>
 
 
- <!-- Footer -->
+ <!---------------------------------------------- FOOTER ------------------------------->
  <footer id="footer" class="bg-veryDarkBlue">
   <!-- Flex Container -->
   <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
