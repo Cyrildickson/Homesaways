@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const withMT = require("@material-tailwind/html/utils/withMT");
 module.exports = withMT({
-  content: ['./*.html',
+  content: ['./*.{html,js}',
   "./node_modules/flowbite/**/*.js",
   "./node_modules/tw-elements/dist/js/**/*.js"
 ],
