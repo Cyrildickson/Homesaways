@@ -9,7 +9,7 @@
 
 
 
-    <style>
+    <!-- <style>
       /* Add your additional styles here */
       body {
           background-color: #f9f9f9;
@@ -38,12 +38,12 @@
           line-height: 1.6;
       }
   </style>
-
+ -->
   </head>
 <body>
     
 
-
+<!-- 
     <nav class="bg-darkBlue border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -77,11 +77,54 @@
         </div>
         </div>
       </nav>
+   -->
+
+<!-- <div class="text-center">
+  <p class="text-3xl">This is new</p>
+</div> -->
+
+
+
+
+
+<ul class="flex">
+    <li class="mr-4"><a href="houses.html" class="nav-link">Home</a></li>
+    <li class="mr-4"><a href="index.html" class="nav-link">About</a></li>
+    <li class="mr-4"><a href="cars.html" class="nav-link">Services</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the current URL path
+    var path = window.location.pathname;
+  
+    // Find the corresponding link and add the 'active' class
+    var links = document.querySelectorAll('.nav-link');
+    links.forEach(function(link) {
+      if (link.getAttribute('href') === path) {
+        link.classList.add('active');
+      }
+    });
+  });
+  </script>
   
 
-<div class="text-center">
-  <p class="text-3xl">This is new</p>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -255,7 +298,7 @@
   </section>
 
   <!-- Section 7: Contact Us -->
-  <section class="mb-8">
+  <!-- <section class="mb-8">
       <h2 class="text-2xl font-semibold mb-4">7. Contact Us</h2>
 
       <p>
@@ -268,7 +311,7 @@
       Thank you for trusting HomesAway with your rental needs. We are committed to protecting your privacy and
       providing a secure and enjoyable experience on our platform.
   </p>
-</div>
+</div> -->
 
 
 

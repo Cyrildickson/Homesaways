@@ -30,22 +30,26 @@
 
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
       <ul class="flex flex-col font-bold p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="index.html" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500" >Home</a>
+        
+        <li class="nav-link">
+          <a href="index.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 
+          md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700
+           dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
         </li>
 
-        <li>
-          <a href="cars.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-
+        <li nav-link>
+          <a href="cars.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100
+           md:hover:bg-transparent md:hover:text-blue-700 d:dark:hover:text-blue-
            dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Our Vehichles</a>
         </li>
-        <li>
+        <li class="nav-link active">
           <a href="houses.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-
            dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page" >Our Houses</a>
         </li>
 
-        <li>
-          <a href="#footer" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-
-           dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
+        <li class="nav-link">
+          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-
+           dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">Contact Us</a>
         </li>
         
         
@@ -124,18 +128,18 @@
 
 
 
-<div class="grid grid-cols-3 gap-4 pt-5 mb-5">
-  <div class="...">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-5">
+  <div class="">
     <img class="" src="images/houses/photo_1_2023-11-23_07-33-40.jpg" alt="">
   </div>
-  <div class="...">
+  <div class="">
     <img class="" src="images/houses/photo_2_2023-11-23_07-33-40.jpg" alt="">
   </div>
-  <div class="...">
+  <div class="">
     <img class="" src="images/houses/photo_3_2023-11-23_07-33-40.jpg" alt="">
   </div>
-  <div class="...">
-    <img class="" src="images/houses/photo_4_2023-11-23_07-33-40.jpg" alt="">
+  <div class="">
+    <img class="object-cover" src="images/houses/photo_4_2023-11-23_07-33-40.jpg" alt="">
   </div>
   <div class="...">
     <img class="" src="images/houses/photo_5_2023-11-23_07-33-40.jpg" alt="">
@@ -188,7 +192,68 @@
 
 
 
+<!-- \\\\\\ -->
+<!-- Sidebar for Contacts info -->
+<!-- \\\\\\\ -->
 
+<!-- drawer init and show -->
+<div class="text-center pt-5 mb-5">
+
+  <button class="align-middle select-none font-sans font-bold text-center uppercase disabled:opacity-50
+   disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md
+    shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none
+     block w-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-brightRedLight duration-300"
+  type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
+  
+  Contact Us Today
+</button>
+
+
+</div>
+
+<!-- Sidebar info component -->
+<div id="drawer-contact" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-contact-label">
+  <h5 id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400"><svg class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+   <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+   <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+ </svg>Contact us</h5>
+  <button type="button" data-drawer-hide="drawer-contact" aria-controls="drawer-contact" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
+     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+     </svg>
+     <span class="sr-only">Close menu</span>
+  </button>
+  <form action="https://getform.io/f/0325aaa9-2cfe-4463-badf-d3a8d9f56444" method="POST" class="mb-6">
+    <div class="mb-6">
+        <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+        <input name="name" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Name" required>
+     </div>
+     <div class="mb-6">
+        <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+        <input name="email" type="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
+     </div>
+     <div class="mb-6">
+        <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+        <input name="subject" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Let us know how we can help you" required>
+     </div>
+     <div class="mb-6">
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+        <textarea name="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
+     </div>
+     <button type="submit" class="text-white bg-brightRed hover:bg-brightRedLight w-full focus:ring-4 focus:ring-brightRedLight font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-brightRed dark:hover:bg-brightRedLight focus:outline-none dark:focus:ring-brightRed block">Send message</button>
+  </form>
+  <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+     <a href="#" class="hover:underline">homesaway432@gmail.com</a>
+  </p>
+  <p class="text-sm text-gray-500 dark:text-gray-400">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+     <a href="#" class="hover:underline">(+233) 591-57-8954</a>
+  </p>
+</div>
+
+<!-- \\\\\\ -->
+<!-- Sidebar for Contacts info -->
+<!-- \\\\\\\ -->
 
 
 
@@ -279,7 +344,20 @@
   </div>
 </footer>
 
-
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the current URL path
+    var path = window.location.pathname;
+  
+    // Find the corresponding link and add the 'active' class
+    var links = document.querySelectorAll('.nav-link');
+    links.forEach(function(link) {
+      if (link.getAttribute('href') === path) {
+        link.classList.add('active');
+      }
+    });
+  });
+  </script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
